@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papo de Dev</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <img src="assets/images/logo.png" alt="Logotipo Papo de Dev" class="logo">
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#conteudo">Conteúdo</a></li>
+                <li><a href="#videos">Vídeos</a></li>
+                <li><a href="#especialistas">Especialistas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <form class="search-bar">
+                <input type="text" placeholder="Buscar no site" required>
+                <button type="submit">Pesquisar</button>
+            </form>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <main>
+        <!-- Introdução -->
+        <section id="inicio">
+            <h1>Bem-vindo ao Papo de Dev</h1>
+            <p>Um espaço para aprender, compartilhar e explorar o universo do desenvolvimento web.</p>
+        </section>
+
+        <!-- Conteúdo -->
+        <section id="conteudo">
+            <h2>Artigos Recentes</h2>
+            <article>
+                <h3>O Futuro do Front-end</h3>
+                <img src="assets/images/frontend-future.jpg" alt="Imagem sobre o futuro do front-end">
+                <p>Descubra as tendências que estão moldando o futuro do desenvolvimento front-end.</p>
+                <button onclick="alert('Lendo o artigo sobre Front-end!')">Leia Mais</button>
+            </article>
+            <article>
+                <h3>Back-end com Node.js</h3>
+                <img src="assets/images/nodejs-backend.jpg" alt="Imagem sobre desenvolvimento com Node.js">
+                <p>Explore como o Node.js está transformando o desenvolvimento de aplicações robustas.</p>
+                <button onclick="alert('Lendo o artigo sobre Back-end com Node.js!')">Leia Mais</button>
+            </article>
+        </section>
+
+        <!-- Vídeos -->
+        <section id="videos">
+            <h2>Vídeos</h2>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=D1FTA7SBKQo" title="Introdução ao Desenvolvimento Web" frameborder="0" allowfullscreen></iframe>
+                <p>Introdução ao Desenvolvimento Web - Aprenda os primeiros passos.</p>
+            </div>
+        </section>
+
+        <!-- Especialistas -->
+        <section id="especialistas">
+            <h2>Especialistas</h2>
+            <div class="expert">
+                <img src="assets/images/dev1.jpg" alt="João Silva">
+                <h3>João Silva</h3>
+                <p>Especialista em Front-end</p>
+                <a href="https://linkedin.com/in/joaosilva" target="_blank">LinkedIn</a>
+            </div>
+            <div class="expert">
+                <img src="assets/images/dev2.jpg" alt="Maria Souza">
+                <h3>Maria Souza</h3>
+                <p>Engenheira de Back-end</p>
+                <a href="https://linkedin.com/in/mariasouza" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="dúvida">Dúvida</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="mensagem-status" style="display:none; color: green;">Mensagem enviada com sucesso!</p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <ul>
+            <li><a href="#politica">Política de Privacidade</a></li>
+            <li><a href="#termos">Termos de Uso</a></li>
+            <li><a href="#ajuda">Ajuda</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+        <p>&copy; 2024 Papo de Dev. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
