@@ -1,0 +1,9 @@
+#pizzaPronta span {
+    margin: 0 5px;
+    transition: transform 0.2s ease;
+}
+
+#pizzaPronta span:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
